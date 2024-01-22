@@ -1,0 +1,17 @@
+.gallery {
+  list-style: none;
+  background: #a68cb9;
+  height: auto;
+  width: 400px;
+  border: solid #0cb8ec 2px;
+}
+#boxes {
+  border: solid #0cb8ec 2px;
+  border-radius: 4px;
+  width: 700px;
+  height: auto;
+  padding: 20px;
+}
+.box {
+  border: solid black 2px;
+}
