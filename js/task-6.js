@@ -12,8 +12,13 @@ function validateCount(count) {
     return count;
   }
 }
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
+
 
 function createBox() {
+  destroyBox()
   const boxSize = 30;
   const count = validateCount(input.value);
   if (count) {
@@ -29,10 +34,7 @@ function createBox() {
   } else {
     return alert('Please enter a valid number between 1 and 100');
   }
-  function getRandomHexColor() {
-    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-  }
-
+  
   input.value = '';
 }
 function destroyBox() {
